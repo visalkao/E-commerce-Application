@@ -18,21 +18,23 @@
   <!-- </div> -->
 
 <div style="background-color: gray;">
-    <span class="headerpage">
+    <div class="headerpage">
       <span style="background-color: gray" class="logo">
         <img style="width:60px; height:60px;" alt="Store Logo" src="./assets/images/instagram.png">
       </span>
       <span class="name-store">
         Specter Store
+        <div class="slogan">
+          Your one and Only Trusted Partner
+        </div>
       </span>
-      <span class="slogan">
-        Your one and Only Trusted Partner
-      </span>
+      
+
     
       <span class="Sign">
         <button style="background-color: white; border-color: white; background: transparent;"><u>Sign Up</u></button> | <button style="background-color: white; border-color: white; background: transparent;"><u>Sign In</u></button>
       </span>
-    </span>
+    </div>
   </div>
     <div>
       <div class="textdescription">
@@ -50,7 +52,7 @@
       <h1 style="left: 10px;
                 position: absolute;
                 left: 100px;
-                top: 400px;">
+                top: 500px;">
         Promotions
       </h1>
       <br>
@@ -71,7 +73,7 @@
         View Cart
       </span>
     </div>
-    <div style="color: white; position: absolute; left: 70%; top:1190px">
+    <div style="color: white; position: absolute; left: 1100px; top:1390px">
       Sign In:     
       <span style="background-color: white; color:white; left: 10px; width: 80px; height: 40px; radius: 2px;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
     </div>
@@ -91,30 +93,37 @@
 
 <style>
 .headerpage{
-  background-color: #2c3e50;
+  background-color: gray;
+  position: relative;
+  height: 100px;
+  top: 0px;
+  display: flex;
+  align-items: center;
 }
 .logo{
   font-size: large;
-  position: absolute;
+  position: inherit;
   left: 30px;
-  top: 20px;
+  top: 2px;
 }
 .name-store{
   font-size: large;
-  position: absolute;
-  left: 110px;
-  top: 25px;
+  position: inherit;
+  left: 8px;
+  color: black;
+  top: 0px;
 }
 .slogan{
   font-size: medium;
-  position: absolute;
-  left: 110px;
-  top: 50px;
+  position: inherit;
+  left: 68px;
+  color: black;
+  top: 5px;
 }
 .Sign{
-  position: absolute;
-  left: 85%;
-  top: 30px;
+  position: inherit;
+  left: 950px;
+  top: 3px;
 }
 .textdescription{
   background-color:gray;
@@ -122,13 +131,13 @@
   position: absolute;
   left: 50px;
   padding: 50px;
-  top: 120px;
+  top: 220px;
   
 }
 .product{
   position: absolute;
   left: 350px;
-  top: 450px;
+  top: 550px;
 }
 .footerpage{
   background-color: gray;
@@ -136,7 +145,7 @@
   width: 100%;
   height: 100px;
   
-  top: 1050px;
+  top: 1150px;
   display: flex;
   justify-content: flex-start;
 }
