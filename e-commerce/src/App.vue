@@ -1,11 +1,12 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>  -->
+  <Homepage></Homepage>
 
   <!-- <div class="header" style="position: absolute; left: 10px; top: 20px;">
     <span >
       <img style="width:40px; height:40px;" alt="Store Logo" src="./assets/images/instagram.png">
-      
+       
     </span>
     <span id="name-store" style="padding: 10px; ">
       Spector Store
@@ -13,10 +14,14 @@
       
         Your one and only Trusted Partner
       
-    </span> -->
+    </span> 
     
-  <!-- </div> -->
+ </div> -->
 
+
+  
+  <!-- test -->
+<!-- 
 <div style="background-color: gray;">
     <div class="headerpage">
       <span style="background-color: gray" class="logo">
@@ -77,7 +82,7 @@
       Sign In:     
       <span style="background-color: white; color:white; left: 10px; width: 80px; height: 40px; radius: 2px;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
     </div>
-  
+   -->
 </template>
 
 <script>
@@ -89,6 +94,14 @@
 //     HelloWorld
 //   }
 // }
+import Homepage from './components/Homepage.vue'
+
+export default{
+  name: 'App',
+  components: {
+    Homepage
+  }
+}
 </script>
 
 <style>

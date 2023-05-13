@@ -20,7 +20,7 @@
   <div style="background-color: gray;">
       <div class="headerpage">
         <span style="background-color: gray" class="logo">
-          <img style="width:60px; height:60px;" alt="Store Logo" src="../assets/images/instagram.png">
+          <img style="width:60px; height:60px;" alt="Store Logo" src="./assets/images/instagram.png">
         </span>
         <span class="name-store">
           Specter Store
@@ -36,10 +36,6 @@
         </span>
       </div>
     </div>
-
-
-
-    
       <div>
         <div class="textdescription">
           <h1>
@@ -62,7 +58,7 @@
         <br>
         <br>
         <div class="product">
-          <img style="width: 800px" src="../assets/images/products.png">
+          <img style="width: 800px" src="./assets/images/products.png">
         </div>
         
       </div>
@@ -71,7 +67,7 @@
   
       <div class="footerpage">
         <span class="imagecart">
-          <img style="width: 50px; height: 50px;" src="../assets/images/shopping-cart.png">
+          <img style="width: 50px; height: 50px;" src="./assets/images/shopping-cart.png">
         </span>
         <span class="view-cart">
           View Cart
@@ -85,18 +81,25 @@
   </template>
   
   <script>
-export default {
-  name: 'Homepage-item'
-  // props: {
-  //   msg: String
+  // import HelloWorld from './components/HelloWorld.vue'
+  
+  // export default {
+  //   name: 'App',
+  //   components: {
+  //     HelloWorld
+  //   }
   // }
-}
+  import Homepage from './components/Homepage.vue'
+  
+  export default {
+    name: 'App',
+    components: {
+      HelloWorld
+    }
+  }
   </script>
   
   <style>
-  div{
-    border: red 1px solid;
-  }
   .headerpage{
     background-color: gray;
     position: relative;
