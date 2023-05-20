@@ -63,7 +63,7 @@ setup() {
 
     onMounted(async () => {
       try {
-        const response = await axios.get('http://localhost:8080/');
+        const response = await axios.get('http://localhost:3030/');
         products.value = response.data;
       } catch (err) {
         console.error(err);
