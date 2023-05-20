@@ -1,8 +1,8 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>  -->
-  <Landingpage></Landingpage>
-
+  <!-- <Landingpage></Landingpage> -->
+<Shopping></Shopping>
   <!-- <div class="header" style="position: absolute; left: 10px; top: 20px;">
     <span >
       <img style="width:40px; height:40px;" alt="Store Logo" src="./assets/images/instagram.png">
@@ -83,7 +83,7 @@
       <span style="background-color: white; color:white; left: 10px; width: 80px; height: 40px; radius: 2px;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
     </div>
    -->
-   <div class="wrapper">
+   <!-- <div class="wrapper">
     
     <nav>
         <img class="logo" src="./assets/images/logo.png" alt="">
@@ -99,7 +99,7 @@
           </div>
         </router-link>
     </nav>
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -117,11 +117,12 @@
 //   }
 // }
 // import Homepage from './components/Homepage.vue'
-import Landingpage from './components/Landingpage.vue'
+// import Landingpage from './components/Landingpage.vue'
+import Shopping from './components/Shopping.vue'
 export default{
   name: 'App',
   components: {  
-    Landingpage
+    Shopping
   }
 }
 </script>

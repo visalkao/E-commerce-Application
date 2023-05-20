@@ -49,3 +49,7 @@ app.post('/products', (req, res) => {
 });
 
 app.listen(3030, () => console.log('Listening on port 8081...'));
+
+
+// to run use npm run start:server 
+// if not work, change port num or install modules by npm install
