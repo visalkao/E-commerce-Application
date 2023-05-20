@@ -1,7 +1,7 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>  -->
-  <Homepage></Homepage>
+  <Landingpage></Landingpage>
 
   <!-- <div class="header" style="position: absolute; left: 10px; top: 20px;">
     <span >
@@ -83,9 +83,31 @@
       <span style="background-color: white; color:white; left: 10px; width: 80px; height: 40px; radius: 2px;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
     </div>
    -->
+   <div class="wrapper">
+    
+    <nav>
+        <img class="logo" src="./assets/images/logo.png" alt="">
+        <router-link to="/">Home</router-link>
+        <router-link to="/new">New</router-link>
+        <router-link to="/bestsell">Best Sell</router-link>
+        <router-link to="/discount">Discount</router-link>
+        <span class="search"><input type="text" placeholder="search"></span>
+        <router-link to="/cart">
+        <div class="cart">
+          <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5UlEQVR4nN2UsQ7BUBSGPwsGAxEziweQiGdQEpNX8QzSd5B0EJ7AKGG3moytCSPBQKXJGZpI6tzmVsKX3O075z+3PS38C08glONlEfCIBdyAGhmxiAWlPaukgJ6FgG1SQA7YiRiFaSkDR6kbfJJHIkaPS4srNWuNXAEusllNhd8AruK3tRN5MpGrcOfiTjGgJUUnoJjgdWTy6AZ1DNkYbM7YtHkVOCgaR5PPgIJpwEQaLGV1rVKS38VduUXG5IFzyq9YzVD5DsK0AZnTB/ZAADgWvDeC2LV9C973Axwp9oGuBe+HeQGdhY4nafPkOQAAAABJRU5ErkJggg==">
+          Cart (0)
+          </div>
+        </router-link>
+    </nav>
+  </div>
 </template>
 
 <script>
+
+// to run npm run serve
+
+
+
 // import HelloWorld from './components/HelloWorld.vue'
 
 // export default {
@@ -94,12 +116,12 @@
 //     HelloWorld
 //   }
 // }
-import Homepage from './components/Homepage.vue'
-
+// import Homepage from './components/Homepage.vue'
+import Landingpage from './components/Landingpage.vue'
 export default{
   name: 'App',
-  components: {
-    Homepage
+  components: {  
+    Landingpage
   }
 }
 </script>
