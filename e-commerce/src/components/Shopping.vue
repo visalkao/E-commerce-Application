@@ -14,7 +14,10 @@
     
         
           <span class="Sign">
-            <button style="border: none;background-color: white; border-color: white; background: transparent;"><u>Sign Up</u></button> | <button style="background-color: white; border: none;border-color: white; background: transparent;"><u>Sign In</u></button>
+            <button style="border: none;background-color: white; border-color: white; background: transparent;"><u>Signup</u></button> | <button style="background-color: white; border: none;border-color: white; background: transparent;"><u>Sign In</u></button>
+            
+         
+
           </span>
         </div>
       </div>
@@ -211,5 +214,12 @@ setup() {
     margin-top: 10px;
     background-color: rgb(201, 156, 156)
     
+  }
+  button{
+    cursor: pointer;
+  }
+  .product-btn:hover {
+    background-color: #888;
+    cursor: pointer;
   }
 </style>
