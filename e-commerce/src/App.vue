@@ -1,8 +1,9 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>  -->
-  <!-- <Landingpage></Landingpage> -->
-<Shopping></Shopping>
+  <Landingpage></Landingpage>
+<!-- <Shopping></Shopping> -->
+  <!-- <Homepage></Homepage> -->
   <!-- <div class="header" style="position: absolute; left: 10px; top: 20px;">
     <span >
       <img style="width:40px; height:40px;" alt="Store Logo" src="./assets/images/instagram.png">
@@ -117,12 +118,13 @@
 //   }
 // }
 // import Homepage from './components/Homepage.vue'
-// import Landingpage from './components/Landingpage.vue'
-import Shopping from './components/Shopping.vue'
+import Landingpage from './components/Landingpage.vue'
+// import Shopping from './components/Shopping.vue'
 export default{
   name: 'App',
   components: {  
-    Shopping
+    Landingpage
+    // Homepage
   }
 }
 </script>

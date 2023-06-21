@@ -28,11 +28,10 @@
 
 
 
-      <div class="padding-top"></div>
-      <!--Product Section-->
       <div class="product-row" v-for="row in productRows" :key="row[0].name">
         <div v-for="product in row" :key="product.name" class="product-tile">
-          <img :src="product.pictureUrl" alt="Product image" class="product-image" />
+          <img :src="product.pictureUrl" alt="Product image" class="product-image thumbnail" @click="showFullScreen(product.pictureUrl)">
+          <div id="fullscreen-overlay" @click="cancelFullScreen()" v-show="showOverlay"></div>
           <h3 class="product-name">{{ product.name }}</h3>
           <p class="product-detail">{{ product.detail }}</p>
           <div class="padding-top"></div>
@@ -43,6 +42,7 @@
           <button class="product-btn">Add to Cart</button>
         </div> 
       </div>
+      
       <!-- <div class="product-tile">
         <img class="product-image" src="product-image-url.jpg" alt="Product Image">
         <h3 class="product-name">Product Name</h3>
@@ -65,11 +65,40 @@
 
 
 </template>
-<script>
+<!-- <script>
 import { onMounted, computed, ref } from 'vue';
 import axios from 'axios';
 export default {
     name: 'Shopping-item',
+
+
+    // full screen img
+    data() {
+    return {
+      productRows: [
+        // Array of product rows
+      ],
+      showOverlay: false,
+      fullScreenImage: null
+    };
+  },
+  methods: {
+    showFullScreen(imageUrl) {
+      this.fullScreenImage = imageUrl;
+      this.showOverlay = true;
+      document.addEventListener("keydown", this.cancelFullScreenOnEscape);
+    },
+    cancelFullScreen() {
+      this.fullScreenImage = null;
+      this.showOverlay = false;
+      document.removeEventListener("keydown", this.cancelFullScreenOnEscape);
+    },
+    cancelFullScreenOnEscape(event) {
+      if (event.key === "Escape") {
+        this.cancelFullScreen();
+      }
+    }
+  }
 
 setup() {
     const products = ref([]);
@@ -92,7 +121,90 @@ setup() {
     });
 
     return { productRows };
-  }}
+//   }}
+//   function showFullScreen(image) {
+//   var fullscreenImage = document.createElement("img");
+//   fullscreenImage.src = image.src;
+//   fullscreenImage.id = "fullscreen-image";
+//   document.body.appendChild(fullscreenImage);
+  
+//   var overlay = document.getElementById("fullscreen-overlay");
+//   overlay.style.display = "block";
+  
+//   document.addEventListener("keydown", cancelFullScreenOnEscape);
+//   }
+
+//   function cancelFullScreen() {
+//     var fullscreenImage = document.getElementById("fullscreen-image");
+//     fullscreenImage.remove();
+    
+//     var overlay = document.getElementById("fullscreen-overlay");
+//     overlay.style.display = "none";
+    
+//     document.removeEventListener("keydown", cancelFullScreenOnEscape);
+//   }
+
+// function cancelFullScreenOnEscape(event) {
+//   if (event.key === "Escape") {
+//     cancelFullScreen();
+//   }
+// }
+}};
+</script> -->
+<script>
+import { onMounted, computed, ref } from 'vue';
+import axios from 'axios';
+
+export default {
+  name: 'Shopping-item',
+  setup() {
+    const products = ref([]);
+    const productRows = computed(() => {
+      const rows = [];
+      for (let i = 0; i < products.value.length; i += 4) {
+        rows.push(products.value.slice(i, i + 4));
+      }
+      return rows;
+    });
+
+    onMounted(async () => {
+      try {
+        const response = await axios.get('http://localhost:3030/');
+        products.value = response.data;
+      } catch (err) {
+        console.error(err);
+      }
+    });
+
+    const showFullScreen = (imageUrl) => {
+      // Function logic here
+      this.fullScreenImage = imageUrl;
+      this.showOverlay = true;
+      document.addEventListener("keydown", this.cancelFullScreenOnEscape);
+    };
+
+    const cancelFullScreen = () => {
+      // Function logic here
+      this.fullScreenImage = null;
+      this.showOverlay = false;
+      document.removeEventListener("keydown", this.cancelFullScreenOnEscape);
+    };
+
+    const cancelFullScreenOnEscape = (event) => {
+      // Function logic here
+      if (event.key === "Escape") {
+        this.cancelFullScreen();
+      }
+    };
+
+    return {
+      productRows,
+      showFullScreen,
+      cancelFullScreen,
+      cancelFullScreenOnEscape
+    };
+  }
+};
 </script>
 <style>
 .headerpage{
@@ -215,6 +327,7 @@ setup() {
     background-color: rgb(201, 156, 156)
     
   }
+   /*product tiles button*/ 
   button{
     cursor: pointer;
   }
@@ -222,4 +335,27 @@ setup() {
     background-color: #888;
     cursor: pointer;
   }
+
+  #fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    cursor: pointer;
+  }
+  
+  #fullscreen-image {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
 </style>
