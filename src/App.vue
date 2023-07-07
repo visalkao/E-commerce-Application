@@ -19,8 +19,10 @@ import { RouterLink, RouterView } from 'vue-router'
       <br>
     </div> -->
   <!-- </header> -->
+  
 
   <RouterView />
+ 
 </template>
 
 <!-- <style scoped>

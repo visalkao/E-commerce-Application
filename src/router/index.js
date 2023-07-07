@@ -23,7 +23,7 @@ const router = createRouter({
       component: () => import('../views/Shopping.vue')
     },    
     {
-      path: '/landing',
+      path: '/oldlanding',
       name: 'landing',
       component: () => import('../views/LandingPage.vue')
     },
@@ -31,6 +31,14 @@ const router = createRouter({
       path: '/home',
       name: 'Homepage',
       component: () => import('../views/HomePage.vue')
+    },
+    {
+      path: '/landing',
+      component: () => import('../views/LandingPageNew.vue')
+    },
+    {
+      path: '/signin',
+      component: () => import('../views/SignIn.vue')
     }
   ]
 })

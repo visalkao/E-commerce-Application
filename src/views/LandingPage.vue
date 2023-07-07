@@ -65,18 +65,19 @@
   
       
   
-      <div class="footerpage">
-        <span class="imagecart">
-          <img style="width: 50px; height: 50px;" src="../assets/images/shopping-cart.png">
-        </span>
-        <span class="view-cart">
-          View Cart
-        </span>
-      </div>
-      <div style="color: white; position: absolute; left: 1100px; top:1390px">
-        Sign In:     
-        <span style="background-color: white; color:white; left: 10px; width: 80px; height: 40px; radius: 2px;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
-      </div>
+        <div class="footerpage">
+          <span class="imagecart">
+            <img style="width: 50px; height: 50px;" src="../assets/images/shopping-cart.png">
+          </span>
+          <span class="view-cart">
+            View Cart
+          </span>
+        </div>
+        <div style="color: white; position: absolute; left: 1100px; top:1390px">
+          Sign In:     
+          <span style="background-color: white; color:white; left: 10px; width: 80px; height: 40px; radius: 2px;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+        </div>
+
     
 </template>
   
@@ -129,7 +130,7 @@
     left: 350px;
     top: 550px;
   }
-  .footerpage{
+   .footerpage{
     background-color: gray;
     position: relative;
     width: 100%;
@@ -150,6 +151,15 @@
     color: white;
     left: 80px;
     top: 40px;
+  } 
+  
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
   }
  
 </style>
