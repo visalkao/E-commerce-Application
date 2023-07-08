@@ -30,10 +30,13 @@
         </span>
       
   
-      
-        <span class="Sign">
-          <button style="background-color: white; border-color: white; background: transparent;"><u>Sign Up</u></button> | <button style="background-color: white; border-color: white; background: transparent;"><u>Sign In</u></button>
+        <span>
+          <button id="home-button" @click="navigateToHome"> <u>Hoddddddddddme</u> </button>
         </span>
+        <span class="Sign">
+          <button style="background-color: white; border-color: white; background: transparent;"><u>Siffffgn Up</u></button> | <button style="background-color: white; border-color: white; background: transparent;"><u>Sign In</u></button>
+        </span>
+
 
     </div> 
 
@@ -80,7 +83,15 @@
 
     
 </template>
-  
+<script>
+export default {
+  methods: {
+    navigateToHome() {
+      this.$router.push('/home');
+    }
+  }
+}
+</script>
 <style>
 .headerpage {
   background-color: gray;
@@ -160,6 +171,10 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+
+  #home-button {
+    background-color: black;
   }
  
 </style>

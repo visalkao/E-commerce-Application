@@ -146,6 +146,7 @@
             Your one and Only Trusted Partner
           </div>
         </span>
+
         <span class="Sign">
           <button style="background-color: white; border-color: white; background: transparent;"><u>Sign Up</u></button> | <button style="background-color: white; border-color: white; background: transparent;"><u>Sign In</u></button>
         </span>
@@ -179,7 +180,15 @@
       </div>
     </div>
   </template>
-  
+  <script>
+export default {
+  methods: {
+    navigateToHome() {
+      this.$router.push('/home');
+    }
+  }
+}
+</script>
   <style>
   .container {
     display: flex;

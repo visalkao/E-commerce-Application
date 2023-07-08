@@ -19,12 +19,36 @@ import { RouterLink, RouterView } from 'vue-router'
       <br>
     </div> -->
   <!-- </header> -->
+  <p style="width: 1200px;"> Since the website is in production, I would like to ask for your understanding that the routing might not work well now, but I am working on it. For the next submission, I will make sure everything works just fine.</p>
+  <br>
+  <br>
+  <p style="width: 200px;"> Here are links to each pages</p>
+  <br>
+  <nav>
+    <RouterLink to="/homepage">Home        </RouterLink>
+    <RouterLink to="/about">About         </RouterLink>   
+    <RouterLink to="/shopping">Shopping          </RouterLink>
+    <br>
+    <RouterLink to="/landing">Landing      </RouterLink>
+    <RouterLink to="/signin">signin       </RouterLink>
+    <RouterLink to="/shopping">Shopping        </RouterLink>
+  </nav>
+  <br>
+  <br>
+  <br>
   
-
   <RouterView />
  
 </template>
-
+<script>
+export default {
+  methods: {
+    navigateToHome() {
+      this.$router.push('/home');
+    }
+  }
+}
+</script>
 <!-- <style scoped>
 header {
   line-height: 1.5;
