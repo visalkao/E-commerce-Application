@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <!-- <div class="container">
       <div class="headerpage">
         <span class="logo">
           <img style="width:60px; height:60px;" alt="Store Logo" src="../assets/images/instagram.png">
@@ -13,21 +13,18 @@
         <span class="Sign">
           <button style="background-color: white; border-color: white; background: transparent;"><u>Sign Up</u></button> | <button style="background-color: white; border-color: white; background: transparent;"><u>Sign In</u></button>
         </span>
-      </div>
+      </div> -->
 
       ........................................................................................................................................................................................................................................................................................
       <div class="signin">
-      
-
-          
             <div class="container">
-              <label for="uname"><b>Username</b></label>
+              <label for="uname">Username</label>
               <input type="text" placeholder="Enter Username" name="uname" required>
           
               <label for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
           
-              <button type="submit">Login</button>
+              <button type="submit" id="sm">Login</button>
   
             </div>
           
@@ -38,7 +35,7 @@
 
       </div>
 
-      
+<!--       
     
       <div class="footerpage">
         <span class="imagecart">
@@ -53,7 +50,7 @@
         Sign In:
         <span class="signin-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
       </div>
-    </div>
+    </div> -->
 </template>
 
 <style>
@@ -153,7 +150,7 @@
   }
   
   /* Set a style for all buttons */
-  button {
+  #sm {
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;

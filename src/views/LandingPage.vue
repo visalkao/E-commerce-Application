@@ -1,22 +1,5 @@
 <template>
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  
-    <!-- <div class="header" style="position: absolute; left: 10px; top: 20px;">
-      <span >
-        <img style="width:40px; height:40px;" alt="Store Logo" src="./assets/images/instagram.png">
-        
-      </span>
-      <span id="name-store" style="padding: 10px; ">
-        Spector Store
-        <br>
-        
-          Your one and only Trusted Partner
-        
-      </span> -->
-      
-    <!-- </div> -->
-  
+<!-- 
   <div style="background-color: gray;" class="headerpage">
    
         <span style="background-color: gray;" class="logo">
@@ -38,7 +21,7 @@
         </span>
 
 
-    </div> 
+    </div>  -->
 
         <div class="textdescription">
           <h1>
@@ -67,7 +50,7 @@
 
   
       
-  
+<!--   
         <div class="footerpage">
           <span class="imagecart">
             <img style="width: 50px; height: 50px;" src="../assets/images/shopping-cart.png">
@@ -79,7 +62,7 @@
         <div style="color: white; position: absolute; left: 1100px; top:1390px">
           Sign In:     
           <span style="background-color: white; color:white; left: 10px; width: 80px; height: 40px; radius: 2px;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
-        </div>
+        </div> -->
 
     
 </template>
@@ -122,11 +105,11 @@ export default {
     color: black;
     top: 5px;
   }
-  .Sign{
+ /* .Sign{
     position: inherit;
     left: 950px;
     top: 3px;
-  }
+  }*/
   .textdescription{
     background-color:gray;
     color: black;

@@ -136,7 +136,7 @@
    -->
    <template>
     <div class="container">
-      <div class="headerpage">
+      <!-- <div class="headerpage">
         <span class="logo">
           <img style="width:60px; height:60px;" alt="Store Logo" src="../assets/images/instagram.png">
         </span>
@@ -151,7 +151,7 @@
           <button style="background-color: white; border-color: white; background: transparent;"><u>Sign Up</u></button> | <button style="background-color: white; border-color: white; background: transparent;"><u>Sign In</u></button>
         </span>
       </div>
-  
+   -->
       <div class="textdescription">
         <h1>Specter Store: Where Style Meets Convenience</h1>
         <p>Welcome to Specter Store, your one-stop-shop for all things fashion. Our online store offers a wide range of trendy and stylish clothing options for men and women. From chic tops to fashionable bottoms, we have it all. Our goal is to provide you with a seamless and convenient shopping experience, so you can find the perfect outfit from the comfort of your own home. Whether you're looking for the latest fashion trends or timeless classics, we've got you covered. So why wait? Start shopping now and elevate your wardrobe with Specter Store.</p>
@@ -165,7 +165,7 @@
         <img src="../assets/images/products.png">
       </div>
   
-      <div class="footerpage">
+      <!-- <div class="footerpage">
         <span class="imagecart">
           <img style="width: 50px; height: 50px;" src="../assets/images/shopping-cart.png">
         </span>
@@ -177,7 +177,7 @@
       <div class="signin">
         Sign In:
         <span class="signin-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
-      </div>
+      </div> -->
     </div>
   </template>
   <script>
