@@ -6,7 +6,7 @@
 
      <div class="container">
 
-     </div>
+   
      <div>
        <div class="textdescription">
          <h1>
@@ -27,21 +27,28 @@
 
 
      <div>
-       <div class="textdescription" style="top: 530px;">
+       <div class="textdescription" style="top: 530px; display: inline-block;" >
          <h1>
            About Us
          </h1>
-         <p>
-           We believe that fashion is about expressing your unique personality and style, and that everyone deserves to feel confident and beautiful in their clothes
-         </p>     
+         <div style="display: inline-block;">
+
+           <p>
+             We believe that fashion is about expressing your unique personality and style, and that everyone deserves to feel confident and beautiful in their clothes
+           </p>     
+         </div>
          <span>
            <img style="width: 10px; height: 10px;" src="../assets/images/instagram.png">
          </span>    
        </div>
+      <div class="advantages">
+        <h1>User-Friendly Interface</h1>
+        <p>Our website is designed to make your shopping experience as easy and convenient as possible</p>
+      </div>
 
      </div>
     
- 
+    </div>
    
   </template>
   
@@ -105,28 +112,10 @@
     left: 350px;
     top: 550px;
   }
- /* .footerpage{
+  .advantages{
+    width: 30%;
     background-color: gray;
-    position: relative;
-    width: 100%;
-    height: 100px;
-    
-    top: 1150px;
-    display: flex;
-    justify-content: flex-start;
   }
-  .imagecart{
-    position: inherit;
-    left: 50px;
-    top: 25px;
-  }
-  .view-cart{
-    font-size: medium;
-    position: inherit;
-    color: white;
-    left: 80px;
-    top: 40px;
-  }*/
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
