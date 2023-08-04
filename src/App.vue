@@ -1,5 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import instagramImage from "./assets/images/instagram.png";
+
 // import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -58,7 +60,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div style="background-color: gray; display:flex;">
    
       <span style="background-color: gray;" class="logo">
-        <img style="width:60px; height:60px;" alt="Store Logo" src="E-commerce-Application\src\assets\images\instagram.png">
+        <img style="width:60px; height:60px;" alt="Store Logo" src=".\assets\images\instagram.png">
       </span>
       <span class="name-store" >
         <h4 style="margin: 0; margin-left:80px;">Specter Store</h4>
@@ -105,7 +107,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <div class="footerpage">
     <span class="imagecart">
-      <img style="width: 50px; height: 50px;" src="src/assets/images/shopping-cart.png">
+      <img style="width: 50px; height: 50px;" src="./assets/images/shopping-cart.png">
     </span>
     <span class="view-cart">
       View Cart
