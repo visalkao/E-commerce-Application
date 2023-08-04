@@ -58,7 +58,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div style="background-color: gray; display:flex;">
    
       <span style="background-color: gray;" class="logo">
-        <img style="width:60px; height:60px;" alt="Store Logo" src="src/assets/images/instagram.png">
+        <img style="width:60px; height:60px;" alt="Store Logo" src="E-commerce-Application\src\assets\images\instagram.png">
       </span>
       <span class="name-store" >
         <h4 style="margin: 0; margin-left:80px;">Specter Store</h4>
