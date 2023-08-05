@@ -110,7 +110,7 @@ import instagramImage from "./assets/images/instagram.png";
       <img style="width: 50px; height: 50px;" src="./assets/images/shopping-cart.png">
     </span>
     <span class="view-cart">
-      View Cart
+      <RouterLink to="/cart">View Cart</RouterLink>
     </span>
   </div>
   <div style="color: white; position: absolute; left: 1100px; top:1390px">
