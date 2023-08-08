@@ -12,7 +12,7 @@
   </div>
 </template> -->
 <template>
-    <div style="padding-top: 30px;"></div>
+    <!-- <div style="padding-top: 30px;"></div>
   <section class="h-100 h-custom" style="background-color: rgb(197, 195, 195);">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -114,7 +114,101 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Cart and Product Details</title>
+</head>
+<body style="margin: 0; padding: 0;">
+
+  <!-- Table to divide the section into two columns -->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <!-- First column -->
+      <td valign="top" align="center" style="background-color: #f1f1f1; padding: 20px;">
+
+        <!-- Your Cart -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="font-size: 24px; font-weight: bold; padding-bottom: 20px;">Your Cart</td>
+          </tr>
+        </table>
+
+        <!-- Table listing cart item details -->
+        <table width="100%" border="1" cellspacing="0" cellpadding="10">
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+          <!-- Sample row, repeat this row for each cart item -->
+          <tr>
+            <td>
+              <img src="product_image.jpg" alt="Product" width="50" height="50"><br>
+              Product Name
+            </td>
+            <td>$25.00</td>
+            <td>2</td>
+          </tr>
+          <!-- Add more rows here for other cart items -->
+          <tr>
+            <td colspan="3" align="right">Subtotal: $50.00</td>
+          </tr>
+        </table>
+
+      </td>
+
+      <!-- Second column -->
+      <td valign="top" align="center" style="background-color: #ddd; padding: 20px;">
+
+        <!-- Summary -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="font-size: 24px; font-weight: bold; padding-bottom: 20px;">Summary</td>
+          </tr>
+          <!-- Product details row -->
+          <tr>
+            <td>
+              <strong>Product Name:</strong> Sample Product<br>
+              <strong>Price:</strong> $25.00<br>
+              <strong>Description:</strong> Product description goes here.<br>
+              <!-- Add more details about the product -->
+            </td>
+          </tr>
+          <!-- Subtotal -->
+          <tr>
+            <td>
+              <strong>Subtotal:</strong> $50.00
+            </td>
+          </tr>
+          <!-- Shipping cost -->
+          <tr>
+            <td>
+              <strong>Shipping Cost:</strong> $5.00
+            </td>
+          </tr>
+          <!-- Total price -->
+          <tr>
+            <td>
+              <strong>Total Price:</strong> $55.00
+            </td>
+          </tr>
+          <!-- Checkout button -->
+          <tr>
+            <td>
+              <button style="background-color: purple; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Check Out</button>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
   </template>
   
   
