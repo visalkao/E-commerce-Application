@@ -15,6 +15,9 @@
               <div>{{ product.price }}</div>
           </div>
           <button class="product-btn">Add to Cart</button>
+          <router-link class="row justify-content-center align-items-center" v-bind:to="'/products/'+item.id" id="view-detail">
+              <button>View Detail</button>
+            </router-link>
         </div> 
       </div>
     </div>

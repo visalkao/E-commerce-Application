@@ -197,7 +197,7 @@
           <!-- Checkout button -->
           <tr>
             <td>
-              <button style="background-color: purple; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Check Out</button>
+              <RouterLink to="/cart/checkout"><button style="background-color: purple; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Check Out</button></RouterLink>
             </td>
           </tr>
         </table>
@@ -215,46 +215,39 @@
   
   <script>
   import axios from 'axios';
+import { RouterLink } from 'vue-router';
   // import { cartItems } from '../init-data';
   
   export default {
     name: 'cartPage',
     data() {
-      return {
-        cartItems: [],
-        
-      }
+        return {
+            cartItems: [],
+        };
     },
-    
     async created() {
-      const result = await axios.get('http://localhost:3000/api/users/12345/cart');
-      const cartItems = result.data;
-      this.cartItems = cartItems;
+        const result = await axios.get('http://localhost:3000/api/users/12345/cart');
+        const cartItems = result.data;
+        this.cartItems = cartItems;
     },
     computed: {
-      totalPrice() {
-        return this.cartItems.reduce(
-          (sum, item) => sum + Number(item.price),
-          0,
-        );
-      },
-      
-      totalItem() {
-        return this.cartItems.reduce(
-          (count, _) => count + 1,0,
-        );
-      },
-      
+        totalPrice() {
+            return this.cartItems.reduce((sum, item) => sum + Number(item.price), 0);
+        },
+        totalItem() {
+            return this.cartItems.reduce((count, _) => count + 1, 0);
+        },
     },
     methods: {
-      async removeFromCart(productId){
-        if (confirm('Are you sure you want to remove this item from your cart?')) {
-          const result = await axios.delete(`http://localhost:3000/api/users/12345/cart/${productId}`);
-          this.cartItems = result.data;
+        async removeFromCart(productId) {
+            if (confirm('Are you sure you want to remove this item from your cart?')) {
+                const result = await axios.delete(`http://localhost:3000/api/users/12345/cart/${productId}`);
+                this.cartItems = result.data;
+            }
         }
-      }
     },
-  }
+    components: { RouterLink }
+}
   </script>
   <style scoped>
    

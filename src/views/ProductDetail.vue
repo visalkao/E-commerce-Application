@@ -57,7 +57,8 @@
 
 <script>
 import { ref } from 'vue';
-import { items } from '../init-data';
+// import { items } from '../init-data';
+import axios from 'axios';
 export default {
     name: "ProductDetailPage",
     data() {
@@ -70,6 +71,14 @@ export default {
     const toggleColor = () => {
       isRed.value = !isRed.value;
     };
+    onMounted(async () => {
+    try {
+      const response = await axios.get('http://localhost:3030/');
+      item.value = response.data;
+    } catch (err) {
+      console.error(err);
+    }
+  });
     return { isRed, toggleColor };
   },
 }
