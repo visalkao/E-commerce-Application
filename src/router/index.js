@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/LandingPage.vue')
     },
     {
       path: '/about',
@@ -28,9 +28,15 @@ const router = createRouter({
       component: () => import('../views/LandingPage.vue')
     },
     {
+      path: '/thank',
+      name: 'thank',
+      component: () => import('../views/Thankyoupage.vue')
+    },
+    
+    {
       path: '/home',
       name: 'Homepage',
-      component: () => import('../views/HomePage.vue')
+      component: () => import('../views/Homepagenew.vue')
     },
     {
       path: '/landing',
