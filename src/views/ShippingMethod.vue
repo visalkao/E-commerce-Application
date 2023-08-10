@@ -123,8 +123,8 @@ export default {
   }
 }
 </script>
-<style>
-/* Generic styles */
+
+/* Generic styles
 .container {
   width: 100%;
   padding-right: 15px;
@@ -150,7 +150,7 @@ export default {
   max-width: 66.666667%;
 }
 
-/* Specific styles */
+
 div[style="padding-top: 30px;"] {
   padding-top: 30px;
 }
@@ -319,8 +319,280 @@ div[style="padding-top: 30px;"] {
   background-position: center center;
   background-size: 50% 50%;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath fill='white' d='M.93 1.35L.6 1.02C.24.66.25.13.6-.22c.23-.23.59-.23.82 0l.83.84 1.65-1.7c.27-.27.71-.27.97 0 .27.26.27.68 0 .95L2.54 1.61 3.36 2.4c.24.26.24.68 0 .94-.27.27-.71.27-.97 0L1.45 2.7.6 3.54c-.24.26-.68.26-.95 0-.26-.27-.26-.7 0-.96l.33-.32z'%3e%3c/path%3e%3c/svg%3e");
-}
+} */
 
 /* Add more custom styles if needed */
 
+<style>
+  /* Replace Tailwind classes with equivalent CSS */
+  
+  /* Add padding-top */
+  .padding-top-30 {
+    padding-top: 30px;
+  }
+
+  /* Add Bootstrap-like container class */
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Add Bootstrap-like row class */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  /* Add Bootstrap-like column classes */
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  /* Add Bootstrap-like ordering classes */
+  .order-md-1 {
+    order: 1;
+  }
+
+  .order-md-2 {
+    order: 2;
+  }
+
+  /* Add margin-bottom */
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .mb-0 {
+    margin-bottom: 0;
+  }
+
+  /* Add badge styles */
+  .badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+  }
+
+  .badge-secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+
+  .badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+  }
+
+  /* Add Bootstrap-like list-group and list-group-item classes */
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  /* Add d-flex for flexbox support */
+  .d-flex {
+    display: flex !important;
+  }
+
+  .justify-content-between {
+    justify-content: space-between !important;
+  }
+
+  .align-items-center {
+    align-items: center !important;
+  }
+
+  /* Add Bootstrap-like text classes */
+  .text-muted {
+    color: #6c757d !important;
+  }
+
+  /* Add Bootstrap-like button classes */
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+
+  .btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+
+  /* Add Bootstrap-like form classes */
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* Add custom-control for custom radio and checkbox styles */
+  .custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .custom-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+  }
+
+  .custom-radio .custom-control-label::before {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: #adb5bd solid 1px;
+  }
+
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+  }
+
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #f0ad4e;
+    border: #f0ad4e solid 1px;
+  }
+
+  /* Add invalid-feedback class for error messages */
+  .invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+  }
+
+  /* Add custom-checkbox class for checkbox styles */
+  .custom-checkbox .custom-control-label::before {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border: #adb5bd solid 1px;
+  }
+
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+  }
+
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #f0ad4e;
+    border: #f0ad4e solid 1px;
+  }
+
+  /* Add font awesome class for arrow icon */
+  .fas {
+    font-family: "Font Awesome 5 Free";
+  }
+
+  .fa-long-arrow-alt-left:before {
+    content: "\f30a";
+  }
+
+  /* Add Bootstrap-like pt-5 class for top padding */
+  .pt-5 {
+    padding-top: 3rem;
+  }
 </style>

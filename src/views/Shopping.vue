@@ -14,10 +14,8 @@
               <div>Price:</div>
               <div>{{ product.price }}</div>
           </div>
-          <button class="product-btn">Add to Cart</button>
-          <router-link class="row justify-content-center align-items-center" v-bind:to="'/products/'+item.id" id="view-detail">
-              <button>View Detail</button>
-            </router-link>
+          <button @click="showNotification" class="product-btn">Add to Cart</button>
+
         </div> 
       </div>
     </div>
@@ -28,6 +26,7 @@ import axios from 'axios';
 
 export default {
 name: 'Shopping-item',
+
 setup() {
   const products = ref([]);
   const productRows = computed(() => {
@@ -38,10 +37,12 @@ setup() {
     return rows;
   });
 
+
   onMounted(async () => {
     try {
       const response = await axios.get('http://localhost:3030/');
       products.value = response.data;
+      console.log(response);
     } catch (err) {
       console.error(err);
     }
@@ -68,11 +69,19 @@ setup() {
     }
   };
 
+  const showNotification = () => {
+      alert('Added the product to cart.');
+    };
+
+
+
+
   return {
     productRows,
     showFullScreen,
-    cancelFullScreen,
-    cancelFullScreenOnEscape
+    cancelFullScreen, 
+    cancelFullScreenOnEscape,
+    showNotification
   };
 }
 };

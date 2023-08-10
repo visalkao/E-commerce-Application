@@ -145,15 +145,16 @@
           <!-- Sample row, repeat this row for each cart item -->
           <tr>
             <td>
-              <img src="product_image.jpg" alt="Product" width="50" height="50"><br>
-              Product Name
+              <img src="https://i.pinimg.com/564x/c4/01/71/c4017141a018ae6e18c994cfb0440bad.jpg" alt="Product" width="50" height="50"><br>
+              {{                              }}
+              Minimalist Black Shirt
             </td>
-            <td>$25.00</td>
-            <td>2</td>
+            <td>$17.50</td>
+            <td>1</td>
           </tr>
           <!-- Add more rows here for other cart items -->
           <tr>
-            <td colspan="3" align="right">Subtotal: $50.00</td>
+            <td colspan="3" align="right">Subtotal: $17.50</td>
           </tr>
         </table>
 
@@ -170,28 +171,28 @@
           <!-- Product details row -->
           <tr>
             <td>
-              <strong>Product Name:</strong> Sample Product<br>
-              <strong>Price:</strong> $25.00<br>
-              <strong>Description:</strong> Product description goes here.<br>
+              <strong>Product Name:</strong> Minimalist Black Shirt<br>
+              <strong>Price:</strong> $17.50<br>
+              <strong>Description:</strong> Minimalist<br>
               <!-- Add more details about the product -->
             </td>
           </tr>
           <!-- Subtotal -->
           <tr>
             <td>
-              <strong>Subtotal:</strong> $50.00
+              <strong>Subtotal:</strong> $17.5
             </td>
           </tr>
           <!-- Shipping cost -->
           <tr>
             <td>
-              <strong>Shipping Cost:</strong> $5.00
+              <strong>Shipping Cost:</strong> To be selected
             </td>
           </tr>
           <!-- Total price -->
           <tr>
             <td>
-              <strong>Total Price:</strong> $55.00
+              <strong>Total Price:</strong> $17.5
             </td>
           </tr>
           <!-- Checkout button -->

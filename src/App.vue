@@ -81,7 +81,7 @@ import instagramImage from "./assets/images/instagram.png";
       <nav>
         <RouterLink to="/home">Home</RouterLink>     
         <RouterLink to="/landing">Landing</RouterLink>
-        <RouterLink to="/oldlanding"> Old Landing</RouterLink>
+        <!-- <RouterLink to="/oldlanding"> Old Landing</RouterLink> -->
         <RouterLink to="/Shopping">Shopping</RouterLink>
  
       </nav>
